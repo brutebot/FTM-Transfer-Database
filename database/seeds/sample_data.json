@@ -1,0 +1,142 @@
+{
+  "_notice": "SAMPLE SEED DATA FOR DB VALIDATION AND TEST INGESTION ONLY. NOT REAL DATA.",
+  "countries": [
+    {
+      "id": "11111111-1111-4111-a111-111111111111",
+      "iso_code": "ENG",
+      "name": "England [SAMPLE DATA]",
+      "confederation": "UEFA",
+      "fifa_ranking": 3
+    },
+    {
+      "id": "22222222-2222-4222-a222-222222222222",
+      "iso_code": "FRA",
+      "name": "France [SAMPLE DATA]",
+      "confederation": "UEFA",
+      "fifa_ranking": 2
+    },
+    {
+      "id": "33333333-3333-4333-a333-333333333333",
+      "iso_code": "ESP",
+      "name": "Spain [SAMPLE DATA]",
+      "confederation": "UEFA",
+      "fifa_ranking": 1
+    }
+  ],
+  "sources": [
+    {
+      "id": "a0000000-0000-4000-a000-000000000001",
+      "source_name": "Official League Release [SAMPLE DATA]",
+      "source_url": "https://example.com/source/official-release",
+      "source_type": "official_announcement"
+    }
+  ],
+  "leagues": [
+    {
+      "id": "b0000000-0000-4000-a000-000000000001",
+      "external_id": "ext_league_eng_1",
+      "name": "Premier League [SAMPLE DATA]",
+      "code": "EPL",
+      "country_id": "11111111-1111-4111-a111-111111111111",
+      "tier": 1
+    }
+  ],
+  "competitions": [
+    {
+      "id": "c0000000-0000-4000-a000-000000000001",
+      "external_id": "ext_comp_epl_2025",
+      "league_id": "b0000000-0000-4000-a000-000000000001",
+      "name": "Premier League 2025/26 [SAMPLE DATA]",
+      "competition_type": "league"
+    }
+  ],
+  "seasons": [
+    {
+      "id": "d0000000-0000-4000-a000-000000000001",
+      "external_id": "ext_season_2025_2026_epl",
+      "competition_id": "c0000000-0000-4000-a000-000000000001",
+      "name": "2025/2026",
+      "start_date": "2025-08-15",
+      "end_date": "2026-05-24",
+      "is_current": true
+    }
+  ],
+  "clubs": [
+    {
+      "id": "e0000000-0000-4000-a000-000000000001",
+      "external_id": "ext_club_mcfc",
+      "official_name": "Manchester City FC [SAMPLE DATA]",
+      "short_name": "Man City",
+      "country_id": "11111111-1111-4111-a111-111111111111",
+      "city": "Manchester",
+      "league_id": "b0000000-0000-4000-a000-000000000001",
+      "stadium_name": "Etihad Stadium",
+      "stadium_capacity": 53400,
+      "founded_year": 1880,
+      "status": "active"
+    },
+    {
+      "id": "e0000000-0000-4000-a000-000000000002",
+      "external_id": "ext_club_rmcf",
+      "official_name": "Real Madrid CF [SAMPLE DATA]",
+      "short_name": "Real Madrid",
+      "country_id": "33333333-3333-4333-a333-333333333333",
+      "city": "Madrid",
+      "league_id": "b0000000-0000-4000-a000-000000000001",
+      "stadium_name": "Santiago Bernabéu",
+      "stadium_capacity": 81044,
+      "founded_year": 1902,
+      "status": "active"
+    }
+  ],
+  "players": [
+    {
+      "id": "f0000000-0000-4000-a000-000000000001",
+      "external_id": "ext_player_sample_1",
+      "full_name": "Erling Haaland [SAMPLE DATA]",
+      "known_name": "Haaland",
+      "dob": "2000-07-21",
+      "nationality_id": "11111111-1111-4111-a111-111111111111",
+      "position": "ST",
+      "secondary_positions": ["CF"],
+      "preferred_foot": "left",
+      "height_cm": 195,
+      "weight_kg": 88,
+      "shirt_number": 9,
+      "current_club_id": "e0000000-0000-4000-a000-000000000001",
+      "status": "active",
+      "career_start_year": 2016
+    }
+  ],
+  "transfers": [
+    {
+      "id": "t0000000-0000-4000-a000-000000000001",
+      "external_id": "ext_tr_sample_1",
+      "player_id": "f0000000-0000-4000-a000-000000000001",
+      "previous_club_id": null,
+      "new_club_id": "e0000000-0000-4000-a000-000000000001",
+      "transfer_date": "2022-07-01",
+      "season_id": "d0000000-0000-4000-a000-000000000001",
+      "transfer_type": "permanent",
+      "is_permanent": true,
+      "fee_amount": 60000000,
+      "currency": "EUR",
+      "reported_fee": "€60M [SAMPLE DATA]",
+      "fee_status": "confirmed"
+    }
+  ],
+  "rumours": [
+    {
+      "id": "r0000000-0000-4000-a000-000000000001",
+      "player_id": "f0000000-0000-4000-a000-000000000001",
+      "current_club_id": "e0000000-0000-4000-a000-000000000001",
+      "interested_club_id": "e0000000-0000-4000-a000-000000000002",
+      "headline": "Sample Transfer Intelligence Headline [SAMPLE DATA]",
+      "summary": "Sample summary for architecture testing.",
+      "status": "interest",
+      "currency": "EUR",
+      "source_url": "https://example.com/rumours/sample-1",
+      "publication_date": "2026-02-01"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "ftm-master-database",
+  "version": "1.0.0",
+  "description": "Centralized, scalable, production-ready football master database architecture for Football Transfer Market (FTM)",
+  "main": "scripts/validation/validate_database.js",
+  "scripts": {
+    "validate": "node scripts/validation/validate_database.js",
+    "ingest": "node scripts/import/ingest_provider_data.js",
+    "normalize": "node scripts/normalization/normalize_football_data.js",
+    "export": "node scripts/export/export_data.js"
+  },
+  "keywords": [
+    "football",
+    "soccer",
+    "transfer-market",
+    "database",
+    "postgresql",
+    "supabase",
+    "ftm"
+  ],
+  "author": "FTM Engineering Team",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
