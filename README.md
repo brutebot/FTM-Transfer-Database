@@ -5,7 +5,7 @@
 ![Schema Version](https://img.shields.io/badge/Schema%20Version-1.0.0-emerald)
 ![Data Integrity](https://img.shields.io/badge/Data%20Integrity-Source--Traceable-orange)
 
-The **FTM Master Database** is an enterprise-grade, highly normalized, production-ready football relational database architecture. Built specifically for the **Football Transfer Market (FTM)** platform, it serves as the centralized backend data foundation designed to handle millions of players, clubs, competitions, matches, historical transfers, intelligence rumours, statistics, and market valuations.
+The **FTM Master Database** is an enterprise-grade, highly normalized, production-ready football relational database architecture. Built specifically for the **Football Transfer Market (FTM)** platform, it serves as the centralized backend data foundation designed to handle millions of players, clubs, competitions, matches, historical transfers, intelligence rumours, statistics, and market valuations..
 
 > **IMPORTANT ARCHITECTURAL NOTICE**  
 > This project is a **NEW, SEPARATE DATABASE PROJECT**. It functions as the standalone backend database foundation. It does NOT modify or run frontend website code, but is designed to cleanly connect to the FTM website via an API layer.
